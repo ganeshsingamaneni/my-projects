@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+
+<h1 style="color:blue;font-family:verdana;text-align:center;"> EasyShop App</h1>
+{% if ord %}
+<table>
+  <h2 style="color:green;font-family:verdana;text-align:center;"> Orders of all users</h2>
+  <tr>
+    <th>User</th>
+    <th>Item</th>
+    <th>Categorie</th>
+    <th>Status</th>
+    <th>TotalPrice</th>
+    <th>Created</th>
+    <th>Updated</th>
+  </tr>
+
+    {% for x in ord%}
+  <tr>
+    <td>{{x.user.name}}</td>
+    <td>{{x.item.name}}</td>
+    <td>{{x.categories.name}}</td>
+    <td>{{x.status}}</td>
+    <td>{{x.total_price}}</td>
+    <td>{{x.created}}</td>
+    <td>{{x.updated}}</td>
+  </tr>
+    {% endfor %}
+</table>
+{% elif item %}
+
+<table>
+  <h2 style="color:green;font-family:verdana;text-align:center;"> Items in The store</h2>
+    <tr>
+      <th>Name</th>
+      <th>Descrip </th>
+      <th>Categorie</th>
+      <th>Status</th>
+      <th>Price</th>
+      <th>Created</th>
+      <th>Updated</th>
+    </tr>
+      {% for x in item%}
+    <tr>
+      <td>{{x.name}}</td>
+      <td>{{x.descrip}}</td>
+      <td>{{x.categorie.name}}</td>
+      <td>{{x.status}}</td>
+      <td>{{x.price}}</td>
+      <td>{{x.created}}</td>
+      <td>{{x.updated}}</td>
+      {% endfor %}
+    </tr>
+
+</table>
+{% elif users %}
+<form action="/latest/" method="POST">
+  {% csrf_token %}
+    {{users}}
+  <input type="submit" value="Add">
+
+</form>
+
+<table>
+  <h2 style="color:green;font-family:verdana;text-align:center;"> List of Users in the App</h2>
+    <tr>
+      <th>Name</th>
+      <th>Address</th>
+      <th>Mobile</th>
+      <th>Email</th>
+      <th>Created</th>
+      <th>Updated</th>
+    </tr>
+      {% for x in users%}
+    <tr>
+      <td>{{x.name}}</td>
+      <td>{{x.address}}</td>
+      <td>{{x.mobile}}</td>
+      <td>{{x.email}}</td>
+      <td>{{x.created}}</td>
+      <td>{{x.updated}}</td>
+      {% endfor %}
+    </tr>
+
+</table>
+{% elif categorie %}
+<table>
+  <h2 style="color:green;font-family:verdana;text-align:center;"> Categories in the store</h2>
+    <tr>
+      <th>Name</th>
+      <th>Status</th>
+      <th>Created</th>
+      <th>Updated</th>
+    </tr>
+      {% for x in categorie%}
+    <tr>
+      <td>{{x.name}}</td>
+      <td>{{x.status}}</td>
+      <td>{{x.created}}</td>
+      <td>{{x.updated}}</td>
+      {% endfor %}
+    </tr>
+
+</table>
+{% elif orders %}
+<table>
+  <h2 style="color:green;font-family:verdana;text-align:center;"> Orders of all users</h2>
+  <tr>
+    <th>User</th>
+    <th>Item </th>
+    <th>Categorie</th>
+    <th>Status</th>
+    <th>TotalPrice</th>
+  </tr>
+
+    {% for x in orders%}
+  <tr>
+    <td>{{x.user}}</td>
+    <td>{{x.item}}</td>
+    <td>{{x.categories.name}}</td>
+    <td>{{x.status}}</td>
+    <td>{{x.total}}</td>
+  </tr>
+    {% endfor %}
+</table>
+{% endif %}
+
+
+</body>
+</html>

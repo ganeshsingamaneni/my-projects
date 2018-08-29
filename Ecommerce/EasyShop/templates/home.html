@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block title %}Login{% endblock %}
+
+{% block content %}
+  <h1 style="color:blue;font-family:verdana;text-align:center;"> EasyShop App</h1>
+  <h2>Welcome To Home Page</h2>
+
+  {% if user.is_authenticated %}
+    Hi {{ user.name }}!
+    <a href="{% url 'logout' %}">logout</a>
+  {% else %}
+    <a href="{% url 'login' %}">login</a>
+    <a href="{% url 'login' %}">Register</a>
+  {% endif %}
+{% endblock %}

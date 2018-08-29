@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>STUDENT REPORT</title>
+  </head>
+  <h1 style="color:red;",style="font-family:verdana;"> STUDENT ACADEMIC REPORT</h1>
+  <body style="background-color:Dodgerblue;">
+
+       {% if students %}
+       <div>
+         {% for  x in students  %}
+         <h1>{{ x.student_name }} - {{ x.subject }} - {{  x.marks}}</h1>
+         {% endfor %}
+       </div>
+       {% elif faculty %}
+       <div>
+         <h1> FACULTY DETAILS <h1>
+         {% for  x in faculty  %}
+         <h1>{{ x.faculty }} - {{ x.name }}</h1>
+         {% endfor %}
+       </div>
+       {% elif total %}
+       <div>
+         {% for x in total %}
+         <h1>{{ x.student_name }} - {{ x.total }}</h1>
+         {% endfor %}
+       </div>
+       {% elif subaverage %}
+       <div>
+         {% for x in subaverage %}
+
+         <h1>{{ x.subject }} - {{ x.total }}</h1>
+
+         {% endfor %}
+       </div>
+       {% elif fun %}
+       <div>
+         {% for x in fun %}
+
+           <h1>{{ x.subject }} - {{ x.total }} - {{ x.faculty }}</h1>
+
+          {% endfor %}
+        </div>
+        {% endif %}
+
+
+  </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ecommerce</title>
+  </head>
+  <h1 style="color:blue;font-family:verdana;text-align:center;"> EasyShop App</h1>
+  <body>
+     {% if ord %}
+     <div style="text-align:center;">
+        <h2 style="color:green;",style="font-family:verdana;"> User Orders</h2>
+        {% for x in ord%}
+        USER ID: {{x.user.name}} <br>
+        iTEM ID: {{x.item.name}} <br>
+        CATEGORIES:  {{x.categories.name}} <br>
+        STATUS: {{x.status}} <br>
+        TOTALPRICE: {{x.total_price}}<br>
+        CREATED: {{x.created}}<br>
+        UPDATED: {{x.updated}}<br>
+        <hr>
+        {% endfor %}
+      </div>
+      {% elif item%}
+      <div style="text-align:center;">
+        <h2 style="color:green;",style="font-family:verdana;"> Items in the store</h2>
+        {% for x in item%}
+        ID : {{x.id}}<br>
+        NAME : {{x.name}} <br>
+        DESCRIPTION : {{x.descrip}} <br>
+        PRICE :  {{x.price}} <br>
+        STATUS : {{x.status}} <br>
+        CATEGORIE :  {{x.categorie}} <br>
+        CREATED: {{x.created}}<br>
+        UPDATED: {{x.updated}}<br>
+        <hr>
+        {% endfor %}
+
+      </div>
+      {% elif users%}
+      <div style="text-align:center;">
+        <h2 style="color:green;",style="font-family:verdana;"> Users in the app</h2>
+        {% for x in users%}
+        ID: {{x.id}}<br>
+        NAME : {{x.name}} <br>
+        ADDRESS : {{x.address}} <br>
+        MOBILE :  {{x.mobile}} <br>
+        EMAIL : {{x.email}} <br>
+        CREATED: {{x.created}}<br>
+        UPDATED: {{x.updated}}<br>
+        <hr>
+        {% endfor %}
+      </div>
+      {% elif categorie%}
+      <div style="text-align:center;">
+        <h2 style="color:green;",style="font-family:verdana;"> Categories in the store</h2>
+        {% for x in categorie%}
+        ID: {{x.id}}<br>
+        NAME : {{x.name}} <br>
+        STATUS : {{x.status}} <br>
+        CREATED: {{x.created}}<br>
+        UPDATED: {{x.updated}}<br>
+        <hr>
+        {% endfor %}
+      </div>
+      {% elif orders %}
+      <div style="text-align:center;">
+         <h2 style="color:green;font-family:verdana;"> User Orders</h2>
+         {% for x in orders%}
+         USER ID: {{x.user}} <br>
+         ITEM ID: {{x.item.name}} <br>
+         CATEGORIES:  {{x.categories.name}} <br>
+         STATUS: {{x.status}} <br>
+         TOTALPRICE: {{x.total}}<br>
+         <hr>
+         {% endfor %}
+       </div>
+      {% endif %}
+    </body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+
+<h1 style="color:blue;font-family:verdana;text-align:center;"> EasyShop App</h1>
+{% if ord %}
+<table>
+  <h2 style="color:green;font-family:verdana;text-align:center;"> current stock of currency notes</h2>
+  <tr>
+    <th>Rs-2000</th>
+    <th>Rs-500</th>
+    <th>Rs-100</th>
+    <th>Rs-50</th>
+    <th>Rs-20</th>
+    <th>Rs-10</th>
+    <th>Rs-5</th>
+    <th>Rs-2</th>
+    <th>Rs-1</th>
+  </tr>
+
+    {% for x in ord%}
+  <tr>
+    <td>{{x.Rs2000}}</td>
+    <td>{{x.Rs500}}</td>
+    <td>{{x.Rs100}}</td>
+    <td>{{x.Rs50}}</td>
+    <td>{{x.Rs20}}</td>
+    <td>{{x.Rs10}}</td>
+    <td>{{x.Rs5}}</td>
+    <td>{{x.Rs2}}</td>
+    <td>{{x.Rs1}}</td>
+  </tr>
+    {% endfor %}
+</table>
+{% elif serializer %}
+<table>
+  <h2 style="color:green;font-family:verdana;text-align:center;"> List of Bills up to date </h2>
+  <tr>
+    <th>Id</th>
+    <th>Bill</th>
+    <th>Paid</th>
+    <th>Change</th>
+    <th>Rs-2000</th>
+    <th>Rs-500</th>
+    <th>Rs-100</th>
+    <th>Rs-50</th>
+    <th>Rs-20</th>
+    <th>Rs-10</th>
+    <th>Rs-5</th>
+    <th>Rs-2</th>
+    <th>Rs-1</th>
+  </tr>
+
+    {% for x in serializer%}
+  <tr>
+    <td>{{x.id}}</td>
+    <td>{{x.bill}}</td>
+    <td>{{x.paid}}</td>
+    <td>{{x.change}}</td>
+    <td>{{x.Rs2000}}</td>
+    <td>{{x.Rs500}}</td>
+    <td>{{x.Rs100}}</td>
+    <td>{{x.Rs50}}</td>
+    <td>{{x.Rs20}}</td>
+    <td>{{x.Rs10}}</td>
+    <td>{{x.Rs5}}</td>
+    <td>{{x.Rs2}}</td>
+    <td>{{x.Rs1}}</td>
+  </tr>
+    {% endfor %}
+</table>
+{% endif %}
+
+
+</body>
+</html>
