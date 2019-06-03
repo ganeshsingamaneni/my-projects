@@ -1,0 +1,6 @@
+SEGMENT, SrNo., Account ID, Name of the Borrower, Limit(round Rs, D.P.(round Rs), Outstanding ,Fac., Charge Type, Dt.of Sanc/Ren, Irregular Since, Doc Live, Rate of Intt.,Sec., Unsecured,PR Product Code,CP A/C mntned at
+PER,1, 0036284642482, PITLA  NAGENDER,          30100,          30100,          30100.00,OD, ,  5/12/2016, , Yes,   0.00,OTH,             30100.00,PR 60591002,CP    0,,
+PER,2, 0036284653153, SRINIVAS  NARABOINA,          36000,          36000,          36000.00,OD, ,  5/12/2016, , Yes,   0.00,OTH,             36000.00,PR 60591002,CP    0,,
+PER,3, 0036461018133, KORABOINA  SHARISHBABU,          36000,          36000,          36000.00,OD, , 19/01/2017, , Yes,   0.00,OTH,             36000.00,PR 60591002,CP    0,,
+PER,4, 0035613856659, CHANDRAIAH  VALAPADASU,          39200,          39200,          39200.00,OD, , 12/04/2016, , Yes,   0.00,OTH,             39200.00,PR 60591002,CP    0,,
+PER,5, 0036213507659, KESARLA  VINODH KUMAR,          56000,          56000,          56000.00,OD, , 15/11/2016, , Yes,   0.00,OTH,             56000.00,PR 60591002,CP    0,,
