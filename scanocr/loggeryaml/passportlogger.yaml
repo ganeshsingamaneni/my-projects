@@ -1,0 +1,46 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+ simple:
+   format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+handlers:
+
+
+  # PASSPORT TABLE HANDLERS
+ imagepassport:
+   class: logging.FileHandler
+   level: DEBUG
+   formatter: simple
+   filename: loggerfiles/passportlogger/imagepassport.log
+
+ postpassport:
+   class: logging.FileHandler
+   level: DEBUG
+   formatter: simple
+   filename: loggerfiles/passportlogger/postpassport.log
+
+ getupdatepassport:
+   class: logging.FileHandler
+   level: DEBUG
+   formatter: simple
+   filename: loggerfiles/passportlogger/getupdatepassport.log
+
+
+#PASSPORT TABLE LOGGERS
+
+loggers:
+
+ imagepassports:
+   level: DEBUG
+   handlers: [imagepassport]
+   propagate: True
+
+ postpassports:
+    level: DEBUG
+    handlers: [postpassport]
+    propagate: True
+
+ getupdatepassports:
+    level: DEBUG
+    handlers: [getupdatepassport]
+    propagate: True

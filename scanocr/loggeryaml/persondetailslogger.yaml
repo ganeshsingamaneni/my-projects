@@ -1,0 +1,22 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+ simple:
+   format: '%(asctime)s - %(name)s - %(levelname)s - %(message)s'
+handlers:
+
+   # PERSON DETAILS TABLE HANDLERS
+
+ postpersondetail:
+   class: logging.FileHandler
+   level: DEBUG
+   formatter: simple
+   filename:  loggerfiles/persondetaillogger/postpersondetail.log
+
+loggers:
+
+# PERMISSIONS TABLE LOGGERS
+ postpersondetails:
+   level: DEBUG
+   handlers: [postpersondetail]
+   propagate: True
