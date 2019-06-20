@@ -1,0 +1,6 @@
+[2019-06-19 14:34:57,134] {novotel_2.py:21} INFO - Data parsing started
+[2019-06-19 14:34:57,165] {novotel_2.py:149} INFO - FIltered some Unwanted Data
+[2019-06-19 14:34:57,516] {novotel_2.py:210} INFO - Sorted data based on folio number
+[2019-06-19 14:34:57,541] {novotel_2.py:321} INFO - Data is sorted based on folio number with each SAC code
+[2019-06-19 14:34:57,545] {novotel_2.py:323} INFO - Data converted to panda DataFrame
+[2019-06-19 14:34:57,627] {novotel_2.py:325} INFO - Successfully Transfered  Data to excel file
