@@ -1,0 +1,34 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+ simple:
+   format: '[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s'
+handlers:
+
+# FilePost HANDLERS
+
+ postfile:
+   class: logging.FileHandler
+   level: DEBUG
+   formatter: simple
+   filename:  logger_files/file_post.log
+
+
+ fileconsole:
+   class: logging.StreamHandler
+   level: DEBUG
+   formatter: simple
+
+
+loggers:
+
+ postfile:
+   level: DEBUG
+   handlers: [postfile]
+   propagate: True
+
+
+ fileconsole:
+   level: DEBUG
+   handlers: [fileconsole]
+   propagate: True

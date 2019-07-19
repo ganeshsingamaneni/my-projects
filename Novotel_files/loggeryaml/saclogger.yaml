@@ -1,0 +1,32 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+ simple:
+   format: '[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s'
+handlers:
+
+# ROLE TABLE HANDLERS
+
+ postsaccode:
+   class: logging.FileHandler
+   level: DEBUG
+   formatter: simple
+   filename: logger_files/sac_code.log
+
+ consolepostsaccode:
+   class: logging.StreamHandler
+   level: DEBUG
+   formatter: simple
+
+
+loggers:
+
+ postsaccode:
+   level: DEBUG
+   handlers: [postsaccode]
+   propagate: True
+
+ consolepostsaccode:
+   level: DEBUG
+   handlers: [consolepostsaccode]
+   propagate: True

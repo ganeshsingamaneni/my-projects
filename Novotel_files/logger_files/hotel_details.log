@@ -1,0 +1,268 @@
+[2019-07-11 10:52:58,389] {hotel_post.py:67} INFO - getting data of hotel details on id is success
+[2019-07-12 10:07:42,366] {hotel_post.py:57} ERROR - Exception occured
+Traceback (most recent call last):
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1244, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 550, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/MySQLdb/cursors.py", line 312, in _query
+    db.query(q)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/MySQLdb/connections.py", line 224, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.DataError: (1406, "Data too long for column 'password' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ganesh/my-projects/Novotel_files/controllers/hotel_details/hotel_post.py", line 50, in post
+    db.session.commit()
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1027, in commit
+    self.transaction.commit()
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 494, in commit
+    self._prepare_impl()
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 473, in _prepare_impl
+    self.session.flush()
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2459, in flush
+    self._flush(objects)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2597, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 154, in reraise
+    raise value
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2557, in _flush
+    flush_context.execute()
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 589, in execute
+    uow,
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 245, in save_obj
+    insert,
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 1138, in _emit_insert_statements
+    statement, params
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 988, in execute
+    return meth(self, multiparams, params)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1107, in _execute_clauseelement
+    distilled_params,
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1466, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 399, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 153, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1244, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 550, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/MySQLdb/cursors.py", line 312, in _query
+    db.query(q)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/MySQLdb/connections.py", line 224, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.DataError: (MySQLdb._exceptions.DataError) (1406, "Data too long for column 'password' at row 1")
+[SQL: INSERT INTO hotel_details (hotel_name, email, mobile, user_name, password, location, status, created_at, updated_at) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: ('Hyderabad_airport', 'ganesh@caratred.com', '9876543212', 'ganesh', 'pbkdf2:sha256:150000$MIpW3Iz5$61e744fd4663123996f500ea491d4c0d374dafc4f11a1431ecd65715d5c7c12f', 'airport_hyd', 1, datetime.datetime(2019, 7, 12, 4, 25, 52, 480965), datetime.datetime(2019, 7, 12, 4, 25, 52, 481005))]
+(Background on this error at: http://sqlalche.me/e/9h9h)
+[2019-07-12 10:08:35,945] {hotel_post.py:57} ERROR - Exception occured
+Traceback (most recent call last):
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1244, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 550, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/MySQLdb/cursors.py", line 312, in _query
+    db.query(q)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/MySQLdb/connections.py", line 224, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.DataError: (1406, "Data too long for column 'password' at row 1")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ganesh/my-projects/Novotel_files/controllers/hotel_details/hotel_post.py", line 50, in post
+    db.session.commit()
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1027, in commit
+    self.transaction.commit()
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 494, in commit
+    self._prepare_impl()
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 473, in _prepare_impl
+    self.session.flush()
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2459, in flush
+    self._flush(objects)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2597, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 154, in reraise
+    raise value
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2557, in _flush
+    flush_context.execute()
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 589, in execute
+    uow,
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 245, in save_obj
+    insert,
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 1138, in _emit_insert_statements
+    statement, params
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 988, in execute
+    return meth(self, multiparams, params)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1107, in _execute_clauseelement
+    distilled_params,
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1466, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 399, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 153, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1244, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 550, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/MySQLdb/cursors.py", line 312, in _query
+    db.query(q)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/MySQLdb/connections.py", line 224, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.DataError: (MySQLdb._exceptions.DataError) (1406, "Data too long for column 'password' at row 1")
+[SQL: INSERT INTO hotel_details (hotel_name, email, mobile, user_name, password, location, status, created_at, updated_at) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: ('Hyderabad_airport', 'ganesh@caratred.com', '9876543212', 'ganesh', 'pbkdf2:sha256:150000$U3qYkLju$0365b074d4341a2b359ddfe5d43bcd3bdf54c541b008e1408d1e6bd21c9dc703', 'airport_hyd', 1, datetime.datetime(2019, 7, 12, 4, 38, 27, 168351), datetime.datetime(2019, 7, 12, 4, 38, 27, 168392))]
+(Background on this error at: http://sqlalche.me/e/9h9h)
+[2019-07-12 10:14:06,676] {hotel_post.py:52} INFO - Hotel Details posted succesfully
+[2019-07-18 16:00:10,229] {hotel_post.py:52} INFO - Hotel Details posted succesfully
+[2019-07-18 16:02:24,650] {hotel_post.py:57} ERROR - Exception occured
+Traceback (most recent call last):
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1244, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 550, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/MySQLdb/cursors.py", line 312, in _query
+    db.query(q)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/MySQLdb/connections.py", line 224, in query
+    _mysql.connection.query(self, query)
+MySQLdb._exceptions.IntegrityError: (1062, "Duplicate entry 'mohan@caratred.com' for key 'email'")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ganesh/my-projects/Novotel_files/controllers/hotel_details/hotel_post.py", line 50, in post
+    db.session.commit()
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/scoping.py", line 162, in do
+    return getattr(self.registry(), name)(*args, **kwargs)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 1027, in commit
+    self.transaction.commit()
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 494, in commit
+    self._prepare_impl()
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 473, in _prepare_impl
+    self.session.flush()
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2459, in flush
+    self._flush(objects)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2597, in _flush
+    transaction.rollback(_capture_exception=True)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 154, in reraise
+    raise value
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/session.py", line 2557, in _flush
+    flush_context.execute()
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 422, in execute
+    rec.execute(self)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/unitofwork.py", line 589, in execute
+    uow,
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 245, in save_obj
+    insert,
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/orm/persistence.py", line 1138, in _emit_insert_statements
+    statement, params
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 988, in execute
+    return meth(self, multiparams, params)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/sql/elements.py", line 287, in _execute_on_connection
+    return connection._execute_clauseelement(self, multiparams, params)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1107, in _execute_clauseelement
+    distilled_params,
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1248, in _execute_context
+    e, statement, parameters, cursor, context
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1466, in _handle_dbapi_exception
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 399, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/util/compat.py", line 153, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/engine/base.py", line 1244, in _execute_context
+    cursor, statement, parameters, context
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/sqlalchemy/engine/default.py", line 550, in do_execute
+    cursor.execute(statement, parameters)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/MySQLdb/cursors.py", line 206, in execute
+    res = self._query(query)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/MySQLdb/cursors.py", line 312, in _query
+    db.query(q)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/MySQLdb/connections.py", line 224, in query
+    _mysql.connection.query(self, query)
+sqlalchemy.exc.IntegrityError: (MySQLdb._exceptions.IntegrityError) (1062, "Duplicate entry 'mohan@caratred.com' for key 'email'")
+[SQL: INSERT INTO hotel_details (hotel_name, email, mobile, user_name, password, location, status, created_at, updated_at) VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)]
+[parameters: ('Avasa', 'mohan@caratred.com', '9876543210', 'Mohan', 'pbkdf2:sha256:150000$UsCLK5aW$0b7b083ebda3ea041dd72c00ff695073ec197934ec79bb1b5797c6b28962eefe', 'Hyderabad', 1, datetime.datetime(2019, 7, 18, 8, 29, 51, 619420), datetime.datetime(2019, 7, 18, 8, 29, 51, 619458))]
+(Background on this error at: http://sqlalche.me/e/gkpj)
+[2019-07-18 16:06:52,924] {hotel_post.py:52} INFO - Hotel Details posted succesfully
+[2019-07-18 18:57:59,274] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 09:49:32,610] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 10:09:11,381] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 10:10:52,098] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 10:13:41,110] {hotel_post.py:52} INFO - Hotel Details posted succesfully
+[2019-07-19 10:14:50,857] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 10:15:06,181] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 10:16:19,727] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 10:16:34,404] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 10:17:53,741] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 10:18:38,396] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 10:18:42,402] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 10:19:12,645] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 10:20:05,404] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 10:22:09,476] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 10:22:42,663] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 10:23:11,446] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 10:23:22,794] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 10:54:06,972] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 10:55:29,958] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 10:55:50,319] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 10:56:29,733] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 10:57:17,898] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 10:59:04,338] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 10:59:49,491] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 11:00:12,368] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 11:02:50,809] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 11:03:17,563] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 11:04:58,300] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 11:05:57,376] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 11:08:27,061] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 11:11:31,331] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 11:12:53,295] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 11:14:00,540] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 11:14:44,654] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 11:15:18,944] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 11:19:05,480] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 11:19:18,223] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 11:19:36,682] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 13:54:18,873] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 13:55:05,489] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 13:55:46,162] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 13:57:18,448] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 13:58:21,433] {hotel_post.py:72} INFO - getting data of hotel details on id is success
+[2019-07-19 13:58:24,669] {hotel_post.py:72} INFO - getting data of hotel details on id is success

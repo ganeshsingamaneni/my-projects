@@ -1,0 +1,293 @@
+[2019-07-11 10:48:46,671] {file_post.py:102} INFO - generating output excel file is success
+[2019-07-11 10:48:46,699] {file_post.py:104} INFO - generating no codes csv  file is success
+[2019-07-11 10:48:54,042] {file_post.py:108} INFO - sending mail is success
+[2019-07-11 10:48:54,293] {file_post.py:116} INFO - job done is success and returned no codes csv file
+[2019-07-11 17:58:57,443] {file_post.py:134} INFO - getting data of output file details is success
+[2019-07-12 10:21:42,834] {file_post.py:96} INFO - generating output excel file is success
+[2019-07-12 10:21:42,882] {file_post.py:98} INFO - generating no codes csv  file is success
+[2019-07-12 10:21:46,994] {file_post.py:102} INFO - sending mail is success
+[2019-07-12 10:21:47,427] {file_post.py:110} INFO - job done is success and returned no codes csv file
+[2019-07-12 10:30:25,644] {file_post.py:96} INFO - generating output excel file is success
+[2019-07-12 10:30:25,647] {file_post.py:98} INFO - generating no codes csv  file is success
+[2019-07-12 10:30:30,186] {file_post.py:102} INFO - sending mail is success
+[2019-07-12 10:30:30,626] {file_post.py:110} INFO - job done is success and returned no codes csv file
+[2019-07-12 10:32:41,805] {file_post.py:134} INFO - getting data of output file details is success
+[2019-07-12 10:32:50,687] {file_post.py:134} INFO - getting data of output file details is success
+[2019-07-12 10:33:35,245] {file_post.py:134} INFO - getting data of output file details is success
+[2019-07-12 10:33:42,947] {file_post.py:134} INFO - getting data of output file details is success
+[2019-07-12 10:33:53,993] {file_post.py:134} INFO - getting data of output file details is success
+[2019-07-12 10:34:33,751] {file_post.py:135} INFO - getting data of output file details is success
+[2019-07-12 10:37:30,722] {file_post.py:135} INFO - getting data of output file details is success
+[2019-07-15 14:44:29,429] {file_post.py:96} INFO - generating output excel file is success
+[2019-07-15 14:44:29,482] {file_post.py:98} INFO - generating no codes csv  file is success
+[2019-07-15 14:44:30,926] {file_post.py:122} ERROR - Exception occured
+Traceback (most recent call last):
+  File "/home/ganesh/my-projects/Novotel_files/controllers/file_running_deatils/file_post.py", line 101, in post
+    Mail_index("Output Files",hotel_data[0]['email'],"hii bhanu chander",file1,file2)
+  File "/home/ganesh/my-projects/Novotel_files/config.py", line 32, in Mail_index
+    mail.send(msg)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/flask_mail.py", line 427, in send
+    connection.send(self)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/flask_mail.py", line 192, in send
+    message.rcpt_options)
+  File "/usr/lib/python3.6/smtplib.py", line 867, in sendmail
+    raise SMTPSenderRefused(code, resp, from_addr)
+smtplib.SMTPSenderRefused: (530, b'5.5.1 Authentication Required. Learn more at\n5.5.1  https://support.google.com/mail/?p=WantAuthError 30sm43991122pjk.17 - gsmtp', 'ganesh1995.55@gmail.com')
+[2019-07-15 14:45:07,787] {file_post.py:96} INFO - generating output excel file is success
+[2019-07-15 14:45:07,791] {file_post.py:98} INFO - generating no codes csv  file is success
+[2019-07-15 14:45:12,174] {file_post.py:102} INFO - sending mail is success
+[2019-07-15 14:45:12,687] {file_post.py:110} INFO - job done is success and returned no codes csv file
+[2019-07-15 14:45:12,688] {file_post.py:122} ERROR - Exception occured
+Traceback (most recent call last):
+  File "/home/ganesh/my-projects/Novotel_files/controllers/file_running_deatils/file_post.py", line 119, in post
+    os.remove(home+"/upload/"+f)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ganesh/upload/upload/EFOLIOH6687170.EFO'
+[2019-07-15 14:46:18,966] {file_post.py:96} INFO - generating output excel file is success
+[2019-07-15 14:46:18,969] {file_post.py:98} INFO - generating no codes csv  file is success
+[2019-07-15 14:46:22,685] {file_post.py:102} INFO - sending mail is success
+[2019-07-15 14:46:23,128] {file_post.py:110} INFO - job done is success and returned no codes csv file
+[2019-07-15 14:46:23,128] {file_post.py:122} ERROR - Exception occured
+Traceback (most recent call last):
+  File "/home/ganesh/my-projects/Novotel_files/controllers/file_running_deatils/file_post.py", line 119, in post
+    os.remove(home+f)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ganeshupload/EFOLIOH6687170.EFO'
+[2019-07-15 14:46:52,964] {file_post.py:96} INFO - generating output excel file is success
+[2019-07-15 14:46:52,967] {file_post.py:98} INFO - generating no codes csv  file is success
+[2019-07-15 14:46:56,312] {file_post.py:102} INFO - sending mail is success
+[2019-07-15 14:46:56,726] {file_post.py:110} INFO - job done is success and returned no codes csv file
+[2019-07-15 14:46:56,727] {file_post.py:122} ERROR - Exception occured
+Traceback (most recent call last):
+  File "/home/ganesh/my-projects/Novotel_files/controllers/file_running_deatils/file_post.py", line 119, in post
+    os.remove(home+"/"+f)
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ganesh/upload/EFOLIOH6687170.EFO'
+[2019-07-15 14:47:52,613] {file_post.py:96} INFO - generating output excel file is success
+[2019-07-15 14:47:52,616] {file_post.py:98} INFO - generating no codes csv  file is success
+[2019-07-15 14:47:56,008] {file_post.py:102} INFO - sending mail is success
+[2019-07-15 14:47:56,427] {file_post.py:110} INFO - job done is success and returned no codes csv file
+[2019-07-15 17:56:11,103] {file_post.py:96} INFO - generating output excel file is success
+[2019-07-15 17:56:11,106] {file_post.py:98} INFO - generating no codes csv  file is success
+[2019-07-15 17:56:12,540] {file_post.py:122} ERROR - Exception occured
+Traceback (most recent call last):
+  File "/home/ganesh/my-projects/Novotel_files/controllers/file_running_deatils/file_post.py", line 101, in post
+    Mail_index("Output Files",hotel_data[0]['email'],"hii bhanu chander",file1,file2)
+  File "/home/ganesh/my-projects/Novotel_files/config.py", line 33, in Mail_index
+    mail.send(msg)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/flask_mail.py", line 492, in send
+    message.send(connection)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/flask_mail.py", line 427, in send
+    connection.send(self)
+  File "/home/ganesh/my-projects/venv_nov/lib/python3.6/site-packages/flask_mail.py", line 192, in send
+    message.rcpt_options)
+  File "/usr/lib/python3.6/smtplib.py", line 867, in sendmail
+    raise SMTPSenderRefused(code, resp, from_addr)
+smtplib.SMTPSenderRefused: (530, b'5.5.1 Authentication Required. Learn more at\n5.5.1  https://support.google.com/mail/?p=WantAuthError l31sm33085842pgm.63 - gsmtp', 'ganesh1995.55@gmail.com')
+[2019-07-15 17:56:38,978] {file_post.py:96} INFO - generating output excel file is success
+[2019-07-15 17:56:38,981] {file_post.py:98} INFO - generating no codes csv  file is success
+[2019-07-15 17:56:43,423] {file_post.py:102} INFO - sending mail is success
+[2019-07-15 17:56:43,861] {file_post.py:110} INFO - job done is success and returned no codes csv file
+[2019-07-18 16:56:10,107] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 16:56:13,211] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 16:57:22,961] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 16:57:59,848] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:03:33,158] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:05:17,230] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:06:21,629] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:07:14,328] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:07:43,156] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:07:47,906] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:09:50,381] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:10:40,777] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:11:49,482] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:12:26,710] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:13:24,152] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:16:53,860] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:17:07,057] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:26:34,977] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:27:07,615] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:28:08,338] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:28:22,949] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:28:30,291] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:32:03,387] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:33:40,038] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:34:06,737] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:34:10,035] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:35:34,240] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:35:58,754] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:36:14,741] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:40:13,563] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:40:42,854] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:42:36,156] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:44:01,438] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:44:40,808] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:44:55,389] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:45:41,105] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:46:32,730] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:46:46,159] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:46:50,864] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:48:14,837] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:48:23,009] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:48:58,458] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:49:15,131] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:49:39,766] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:50:30,993] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:51:29,689] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:51:36,773] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:51:41,373] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:51:53,940] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:52:25,971] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:52:28,514] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:52:59,935] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:53:05,679] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:55:38,941] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:55:47,696] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:56:38,460] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:57:00,728] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:57:21,475] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:57:52,654] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:58:22,774] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 17:58:37,871] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:01:51,792] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:02:36,410] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:03:25,392] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:04:45,900] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:05:00,801] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:07:37,662] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:07:43,784] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:08:48,511] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:09:11,603] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:09:25,111] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:09:26,818] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:09:49,524] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:10:06,414] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:10:26,845] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:10:43,166] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:13:09,393] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:13:17,536] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:13:35,480] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:14:01,423] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:14:11,709] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:14:39,248] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:15:37,641] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:16:19,536] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:16:28,047] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:19:09,920] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:19:12,370] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:19:23,419] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:20:12,892] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:20:19,145] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:20:33,762] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:30:52,342] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:32:08,430] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:32:16,886] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:32:35,206] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:32:49,357] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:33:00,712] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:33:11,204] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:33:34,659] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:33:55,570] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:34:00,931] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:34:08,258] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:35:02,847] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:35:36,522] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:36:59,440] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:37:30,920] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:37:42,359] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:38:21,235] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:38:26,334] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:38:32,447] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:38:34,722] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:39:00,221] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:39:17,355] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:39:27,162] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:39:48,113] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:40:15,570] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:40:20,720] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:40:38,252] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:45:39,407] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:45:49,136] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:46:44,976] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:53:18,376] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:56:35,340] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:57:38,009] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-18 18:57:58,434] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 09:49:39,455] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 09:51:00,159] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 09:51:40,836] {file_post.py:140} ERROR - get data of output file details is Failed
+[2019-07-19 09:51:47,765] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 10:07:21,443] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 10:09:08,021] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 10:09:10,629] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 10:10:35,908] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 10:10:52,104] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 10:14:50,830] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 10:15:06,174] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 10:16:19,719] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 10:16:34,399] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 10:17:53,733] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 10:18:38,384] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 10:18:42,395] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 10:19:12,640] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 10:20:05,400] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 10:22:09,473] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 10:22:42,656] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 10:23:11,452] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 10:23:22,799] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 10:54:06,978] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 10:55:29,695] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 10:55:50,317] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 10:56:29,727] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 10:57:17,892] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 10:59:04,332] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 10:59:49,489] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 11:00:12,361] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 11:02:50,805] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 11:03:17,558] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 11:04:58,059] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 11:05:57,382] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 11:08:26,832] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 11:11:31,330] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 11:12:53,075] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 11:14:00,534] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 11:14:44,651] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 11:15:18,936] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 11:19:05,471] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 11:19:18,216] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 11:19:36,674] {file_post.py:136} INFO - getting data of output file details is success
+[2019-07-19 11:57:53,247] {file_post.py:127} ERROR - Exception occured
+Traceback (most recent call last):
+  File "/home/ganesh/my-projects/Novotel_files/controllers/file_running_deatils/file_post.py", line 56, in post
+    file_path = json.load(f)
+NameError: name 'json' is not defined
+[2019-07-19 11:58:11,317] {file_post.py:127} ERROR - Exception occured
+Traceback (most recent call last):
+  File "/home/ganesh/my-projects/Novotel_files/controllers/file_running_deatils/file_post.py", line 57, in post
+    os.makedirs(file_path["Output_files_path"]+"Novotel_output")
+KeyError: 'Output_files_path'
+[2019-07-19 12:01:49,927] {file_post.py:102} INFO - generating output excel file is success
+[2019-07-19 12:01:49,969] {file_post.py:104} INFO - generating no codes csv  file is success
+[2019-07-19 12:01:54,235] {file_post.py:108} INFO - sending mail is success
+[2019-07-19 12:01:54,676] {file_post.py:116} INFO - job done is success and returned no codes csv file
+[2019-07-19 12:02:52,421] {file_post.py:102} INFO - generating output excel file is success
+[2019-07-19 12:02:52,425] {file_post.py:104} INFO - generating no codes csv  file is success
+[2019-07-19 12:02:55,884] {file_post.py:108} INFO - sending mail is success
+[2019-07-19 12:02:56,308] {file_post.py:116} INFO - job done is success and returned no codes csv file
+[2019-07-19 12:04:48,103] {file_post.py:102} INFO - generating output excel file is success
+[2019-07-19 12:04:48,106] {file_post.py:104} INFO - generating no codes csv  file is success
+[2019-07-19 12:04:51,638] {file_post.py:108} INFO - sending mail is success
+[2019-07-19 12:04:52,045] {file_post.py:116} INFO - job done is success and returned no codes csv file
+[2019-07-19 12:05:45,544] {file_post.py:102} INFO - generating output excel file is success
+[2019-07-19 12:05:45,548] {file_post.py:104} INFO - generating no codes csv  file is success
+[2019-07-19 12:05:49,272] {file_post.py:108} INFO - sending mail is success
+[2019-07-19 12:05:49,707] {file_post.py:116} INFO - job done is success and returned no codes csv file
+[2019-07-19 12:07:16,880] {file_post.py:102} INFO - generating output excel file is success
+[2019-07-19 12:07:16,883] {file_post.py:104} INFO - generating no codes csv  file is success
+[2019-07-19 12:07:20,119] {file_post.py:108} INFO - sending mail is success
+[2019-07-19 12:07:20,533] {file_post.py:116} INFO - job done is success and returned no codes csv file
+[2019-07-19 13:54:18,885] {file_post.py:140} INFO - getting data of output file details is success
+[2019-07-19 13:55:05,474] {file_post.py:140} INFO - getting data of output file details is success
+[2019-07-19 13:55:46,133] {file_post.py:140} INFO - getting data of output file details is success
+[2019-07-19 13:57:18,459] {file_post.py:140} INFO - getting data of output file details is success
+[2019-07-19 13:58:21,385] {file_post.py:140} INFO - getting data of output file details is success
+[2019-07-19 13:58:24,655] {file_post.py:140} INFO - getting data of output file details is success

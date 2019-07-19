@@ -1,0 +1,32 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+ simple:
+   format: '[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s'
+handlers:
+
+# ROLE TABLE HANDLERS
+
+ posthotel:
+   class: logging.FileHandler
+   level: DEBUG
+   formatter: simple
+   filename: logger_files/hotel_details.log
+
+ consoleposthotel:
+   class: logging.StreamHandler
+   level: DEBUG
+   formatter: simple
+
+
+loggers:
+
+ posthotel:
+   level: DEBUG
+   handlers: [posthotel]
+   propagate: True
+
+ consoleposthotel:
+   level: DEBUG
+   handlers: [consoleposthotel]
+   propagate: True
