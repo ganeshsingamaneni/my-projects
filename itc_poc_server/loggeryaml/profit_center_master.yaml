@@ -1,0 +1,34 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+ simple:
+   format: '[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s'
+handlers:
+
+#  Product HANDLERS
+
+ post_profit_center_master:
+   class: logging.FileHandler
+   level: DEBUG
+   formatter: simple
+   filename:  logger_files/profit_center_master.log
+
+
+ profit_center_master_console:
+   class: logging.StreamHandler
+   level: DEBUG
+   formatter: simple
+
+
+loggers:
+
+ post_profit_center_master:
+   level: DEBUG
+   handlers: [post_profit_center_master]
+   propagate: True
+
+
+ profit_center_master_console:
+   level: DEBUG
+   handlers: [profit_center_master_console]
+   propagate: True

@@ -1,0 +1,222 @@
+[2019-09-11 18:34:49,304] {add_category_masters.py:39} INFO - no data is available on Category_Master
+[2019-09-11 18:35:08,177] {add_category_masters.py:64} INFO - Category_Master Details posted succesfully
+[2019-09-11 18:35:08,978] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-11 18:35:17,901] {add_category_masters.py:64} INFO - Category_Master Details posted succesfully
+[2019-09-11 18:35:18,629] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-11 18:35:27,975] {add_category_masters.py:64} INFO - Category_Master Details posted succesfully
+[2019-09-11 18:35:28,956] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-11 18:35:36,499] {add_category_masters.py:64} INFO - Category_Master Details posted succesfully
+[2019-09-11 18:35:37,670] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-11 18:39:09,743] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-11 18:39:27,365] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-11 18:39:41,652] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-11 18:39:54,595] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-11 18:40:17,792] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-11 18:40:35,249] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-11 18:40:48,497] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-11 18:41:03,447] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-11 18:45:07,786] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-11 18:45:50,998] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-11 18:46:10,085] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-11 18:46:41,473] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-11 20:33:09,054] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-17 16:22:00,592] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-17 16:29:03,818] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-17 16:30:03,966] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-17 16:30:24,170] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-17 16:30:30,788] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-17 16:30:43,525] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-18 10:10:25,249] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-18 12:04:29,318] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-18 12:04:50,127] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-18 12:08:25,835] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-18 12:08:40,616] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-18 12:19:03,430] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-18 12:56:07,159] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-18 12:58:57,304] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-18 13:01:54,115] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-18 13:03:22,860] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-18 13:05:11,150] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-18 13:06:56,950] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-18 13:08:45,832] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-18 13:11:43,751] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-18 13:12:37,863] {add_category_masters.py:36} INFO - getting data of Category_Master details is success
+[2019-09-18 14:12:02,320] {add_category_masters.py:71} ERROR - Exception occured
+Traceback (most recent call last):
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2275, in _wrap_pool_connect
+    return fn()
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 363, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 497, in checkout
+    rec._checkin_failed(err)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 153, in reraise
+    raise value
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 494, in checkout
+    dbapi_connection = rec.get_connection()
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 621, in get_connection
+    self.__connect()
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 453, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/MySQLdb/__init__.py", line 84, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/MySQLdb/connections.py", line 166, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+MySQLdb._exceptions.OperationalError: (2003, "Can't connect to MySQL server on '104.199.146.29' (113)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ganesh/my_projects/itc_poc_server/controllers/category_masters/add_category_masters.py", line 53, in post
+    Category_Master.category_code==code,Category_Master.category_name==name)).one_or_none()
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3261, in one_or_none
+    ret = list(self)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3334, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3356, in _execute_and_instances
+    querycontext, self._connection_from_session, close_with_result=True
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3371, in _get_bind_args
+    mapper=self._bind_mapper(), clause=querycontext.statement, **kw
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3349, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1124, in connection
+    execution_options=execution_options,
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1130, in _connection_for_bind
+    engine, execution_options
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 431, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2239, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2279, in _wrap_pool_connect
+    e, dialect, self
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1544, in _handle_dbapi_exception_noconnection
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2275, in _wrap_pool_connect
+    return fn()
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 363, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 497, in checkout
+    rec._checkin_failed(err)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 153, in reraise
+    raise value
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 494, in checkout
+    dbapi_connection = rec.get_connection()
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 621, in get_connection
+    self.__connect()
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 453, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/MySQLdb/__init__.py", line 84, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/MySQLdb/connections.py", line 166, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+sqlalchemy.exc.OperationalError: (MySQLdb._exceptions.OperationalError) (2003, "Can't connect to MySQL server on '104.199.146.29' (113)")
+(Background on this error at: http://sqlalche.me/e/e3q8)
+[2019-09-18 14:12:05,419] {add_category_masters.py:71} ERROR - Exception occured
+Traceback (most recent call last):
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2275, in _wrap_pool_connect
+    return fn()
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 363, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 497, in checkout
+    rec._checkin_failed(err)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 153, in reraise
+    raise value
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 494, in checkout
+    dbapi_connection = rec.get_connection()
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 621, in get_connection
+    self.__connect()
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 453, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/MySQLdb/__init__.py", line 84, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/MySQLdb/connections.py", line 166, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+MySQLdb._exceptions.OperationalError: (2003, "Can't connect to MySQL server on '104.199.146.29' (113)")
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ganesh/my_projects/itc_poc_server/controllers/category_masters/add_category_masters.py", line 53, in post
+    Category_Master.category_code==code,Category_Master.category_name==name)).one_or_none()
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3261, in one_or_none
+    ret = list(self)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3334, in __iter__
+    return self._execute_and_instances(context)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3356, in _execute_and_instances
+    querycontext, self._connection_from_session, close_with_result=True
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3371, in _get_bind_args
+    mapper=self._bind_mapper(), clause=querycontext.statement, **kw
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/orm/query.py", line 3349, in _connection_from_session
+    conn = self.session.connection(**kw)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1124, in connection
+    execution_options=execution_options,
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 1130, in _connection_for_bind
+    engine, execution_options
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/orm/session.py", line 431, in _connection_for_bind
+    conn = bind._contextual_connect()
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2239, in _contextual_connect
+    self._wrap_pool_connect(self.pool.connect, None),
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2279, in _wrap_pool_connect
+    e, dialect, self
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 1544, in _handle_dbapi_exception_noconnection
+    util.raise_from_cause(sqlalchemy_exception, exc_info)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 398, in raise_from_cause
+    reraise(type(exception), exception, tb=exc_tb, cause=cause)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 152, in reraise
+    raise value.with_traceback(tb)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/engine/base.py", line 2275, in _wrap_pool_connect
+    return fn()
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 363, in connect
+    return _ConnectionFairy._checkout(self)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 760, in _checkout
+    fairy = _ConnectionRecord.checkout(pool)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 497, in checkout
+    rec._checkin_failed(err)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/util/langhelpers.py", line 68, in __exit__
+    compat.reraise(exc_type, exc_value, exc_tb)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/util/compat.py", line 153, in reraise
+    raise value
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 494, in checkout
+    dbapi_connection = rec.get_connection()
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 621, in get_connection
+    self.__connect()
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/pool/base.py", line 639, in __connect
+    connection = pool._invoke_creator(self)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/engine/strategies.py", line 114, in connect
+    return dialect.connect(*cargs, **cparams)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/sqlalchemy/engine/default.py", line 453, in connect
+    return self.dbapi.connect(*cargs, **cparams)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/MySQLdb/__init__.py", line 84, in Connect
+    return Connection(*args, **kwargs)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/MySQLdb/connections.py", line 166, in __init__
+    super(Connection, self).__init__(*args, **kwargs2)
+sqlalchemy.exc.OperationalError: (MySQLdb._exceptions.OperationalError) (2003, "Can't connect to MySQL server on '104.199.146.29' (113)")
+(Background on this error at: http://sqlalche.me/e/e3q8)
+[2019-09-25 10:51:15,788] {add_category_masters.py:36} INFO - getting data of Category_Master details is success

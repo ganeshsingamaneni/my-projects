@@ -1,0 +1,34 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+ simple:
+   format: '[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s'
+handlers:
+
+#  PM master HANDLERS
+
+ postnsr_data:
+   class: logging.FileHandler
+   level: DEBUG
+   formatter: simple
+   filename:  logger_files/nsr_data_information.log
+
+
+ nsr_dataconsole:
+   class: logging.StreamHandler
+   level: DEBUG
+   formatter: simple
+
+
+loggers:
+
+ postnsr_data:
+   level: DEBUG
+   handlers: [postnsr_data]
+   propagate: True
+
+
+ nsr_dataconsole:
+   level: DEBUG
+   handlers: [nsr_dataconsole]
+   propagate: True

@@ -1,0 +1,34 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+ simple:
+   format: '[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s'
+handlers:
+
+#  Product HANDLERS
+
+ post_view_data:
+   class: logging.FileHandler
+   level: DEBUG
+   formatter: simple
+   filename:  logger_files/view_data.log
+
+
+ view_data_console:
+   class: logging.StreamHandler
+   level: DEBUG
+   formatter: simple
+
+
+loggers:
+
+ post_uom_master:
+   level: DEBUG
+   handlers: [post_view_data]
+   propagate: True
+
+
+ uom_master_console:
+   level: DEBUG
+   handlers: [view_data_console]
+   propagate: True

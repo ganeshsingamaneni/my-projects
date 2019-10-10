@@ -1,0 +1,34 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+ simple:
+   format: '[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s'
+handlers:
+
+#  GL master HANDLERS
+
+ postgl_master:
+   class: logging.FileHandler
+   level: DEBUG
+   formatter: simple
+   filename:  logger_files/gl_master.log
+
+
+ gl_masterconsole:
+   class: logging.StreamHandler
+   level: DEBUG
+   formatter: simple
+
+
+loggers:
+
+ postgl_master:
+   level: DEBUG
+   handlers: [postgl_master]
+   propagate: True
+
+
+ gl_masterconsole:
+   level: DEBUG
+   handlers: [gl_masterconsole]
+   propagate: True

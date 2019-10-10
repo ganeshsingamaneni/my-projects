@@ -1,0 +1,39 @@
+[2019-09-12 12:57:00,595] {get_data.py:146} ERROR - Exception occured
+Traceback (most recent call last):
+  File "/home/ganesh/my_projects/itc_poc_server/controllers/machine_production_data_information/get_data.py", line 131, in get
+    ll.append(x[ii])
+KeyError: 'product_short_description'
+[2019-09-12 13:00:15,225] {get_data.py:142} INFO - succesfully created excel file in required path
+[2019-09-12 13:18:27,381] {get_data.py:173} INFO - succesfully created excel file in required path
+[2019-09-12 13:21:30,503] {get_data.py:172} INFO - succesfully created excel file in required path
+[2019-09-12 14:06:48,207] {get_data.py:172} INFO - succesfully created excel file in required path
+[2019-09-16 11:04:37,132] {get_data.py:172} INFO - succesfully created excel file in required path
+[2019-09-16 13:20:07,839] {add_machine_production.py:36} INFO - getting data of machine_product_data_information details is success
+[2019-09-16 14:20:46,831] {add_machine_production.py:37} INFO - getting data of machine_product_data_information details is success
+[2019-09-16 14:42:25,132] {add_machine_production.py:37} INFO - getting data of machine_product_data_information details is success
+[2019-09-16 14:43:11,445] {add_machine_production.py:65} INFO - machine_product_data_information Details posted succesfully
+[2019-09-16 14:44:03,943] {add_machine_production.py:65} INFO - machine_product_data_information Details posted succesfully
+[2019-09-16 15:34:33,327] {get_data.py:172} INFO - succesfully created excel file in required path
+[2019-09-16 15:36:37,354] {get_data.py:172} INFO - succesfully created excel file in required path
+[2019-09-16 15:39:28,167] {get_data.py:172} INFO - succesfully created excel file in required path
+[2019-09-16 15:42:27,324] {get_data.py:172} INFO - succesfully created excel file in required path
+[2019-09-16 16:01:25,048] {add_machine_production.py:61} INFO - machine_product_data_information Details posted succesfully
+[2019-09-16 16:12:32,151] {add_machine_production.py:61} INFO - machine_product_data_information Details posted succesfully
+[2019-09-16 16:17:00,852] {add_machine_production.py:36} INFO - getting data of machine_product_data_information details is success
+[2019-09-16 16:18:27,290] {get_data.py:172} INFO - succesfully created excel file in required path
+[2019-09-16 16:18:27,291] {get_data.py:176} ERROR - Exception occured
+Traceback (most recent call last):
+  File "/home/ganesh/my_projects/itc_poc_server/controllers/machine_production_data_information/get_data.py", line 173, in get
+    return send_file(home+'/machine_production_data.xlsx', as_attachment=True)
+  File "/home/ganesh/my_projects/itc_venv/lib/python3.7/site-packages/flask/helpers.py", line 629, in send_file
+    file = open(filename, "rb")
+FileNotFoundError: [Errno 2] No such file or directory: '/home/ganesh/machine_production_data.xlsx'
+[2019-09-16 16:19:16,455] {get_data.py:172} INFO - succesfully created excel file in required path
+[2019-09-16 17:46:01,687] {get_data.py:172} INFO - succesfully created excel file in required path
+[2019-09-17 09:26:03,895] {get_data.py:176} ERROR - Exception occured
+Traceback (most recent call last):
+  File "/home/ganesh/my_projects/itc_poc_server/controllers/machine_production_data_information/get_data.py", line 153, in get
+    x.insert(0,paper_machine_data['paper_machine_code'])
+UnboundLocalError: local variable 'paper_machine_data' referenced before assignment
+[2019-09-17 09:33:37,958] {get_data.py:173} INFO - succesfully created excel file in required path
+[2019-09-17 09:36:38,733] {get_data.py:173} INFO - succesfully created excel file in required path

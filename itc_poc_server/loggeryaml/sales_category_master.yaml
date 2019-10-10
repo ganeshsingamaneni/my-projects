@@ -1,0 +1,34 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+ simple:
+   format: '[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s'
+handlers:
+
+#  Product HANDLERS
+
+ post_sales_category_master:
+   class: logging.FileHandler
+   level: DEBUG
+   formatter: simple
+   filename:  logger_files/sales_category_master.log
+
+
+ sales_category_master_console:
+   class: logging.StreamHandler
+   level: DEBUG
+   formatter: simple
+
+
+loggers:
+
+ post_sales_category_master:
+   level: DEBUG
+   handlers: [post_sales_category_master]
+   propagate: True
+
+
+ sales_category_master_console:
+   level: DEBUG
+   handlers: [sales_category_master_console]
+   propagate: True

@@ -1,0 +1,34 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+ simple:
+   format: '[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s'
+handlers:
+
+#  Product HANDLERS
+
+ postproduct:
+   class: logging.FileHandler
+   level: DEBUG
+   formatter: simple
+   filename:  logger_files/product.log
+
+
+ productconsole:
+   class: logging.StreamHandler
+   level: DEBUG
+   formatter: simple
+
+
+loggers:
+
+ postproduct:
+   level: DEBUG
+   handlers: [postproduct]
+   propagate: True
+
+
+ productconsole:
+   level: DEBUG
+   handlers: [productconsole]
+   propagate: True

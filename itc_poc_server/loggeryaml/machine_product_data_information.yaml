@@ -1,0 +1,34 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+ simple:
+   format: '[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s'
+handlers:
+
+#  PM master HANDLERS
+
+ postmachine_product_data:
+   class: logging.FileHandler
+   level: DEBUG
+   formatter: simple
+   filename:  logger_files/machine_production_information.log
+
+
+ machine_product_dataconsole:
+   class: logging.StreamHandler
+   level: DEBUG
+   formatter: simple
+
+
+loggers:
+
+ postmachine_product_data:
+   level: DEBUG
+   handlers: [postmachine_product_data]
+   propagate: True
+
+
+ nsr_datmachine_product_dataconsoleaconsole:
+   level: DEBUG
+   handlers: [machine_product_dataconsole]
+   propagate: True

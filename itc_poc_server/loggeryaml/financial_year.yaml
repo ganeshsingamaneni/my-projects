@@ -1,0 +1,34 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+ simple:
+   format: '[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s'
+handlers:
+
+# Financial year HANDLERS
+
+ postfinancialyear:
+   class: logging.FileHandler
+   level: DEBUG
+   formatter: simple
+   filename:  logger_files/financial_year_master.log
+
+
+ financialyearconsole:
+   class: logging.StreamHandler
+   level: DEBUG
+   formatter: simple
+
+
+loggers:
+
+ postfinancialyear:
+   level: DEBUG
+   handlers: [postfinancialyear]
+   propagate: True
+
+
+ financialyearconsole:
+   level: DEBUG
+   handlers: [financialyearconsole]
+   propagate: True

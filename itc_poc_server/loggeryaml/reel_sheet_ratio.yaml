@@ -1,0 +1,34 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+ simple:
+   format: '[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s'
+handlers:
+
+#  Product HANDLERS
+
+ post_reel_sheet_ratio:
+   class: logging.FileHandler
+   level: DEBUG
+   formatter: simple
+   filename:  logger_files/reel_sheet_ratio.log
+
+
+ reel_sheet_ratio_console:
+   class: logging.StreamHandler
+   level: DEBUG
+   formatter: simple
+
+
+loggers:
+
+ post_reel_sheet_ratio:
+   level: DEBUG
+   handlers: [post_reel_sheet_ratio]
+   propagate: True
+
+
+ reel_sheet_ratio_console:
+   level: DEBUG
+   handlers: [reel_sheet_ratio_console]
+   propagate: True

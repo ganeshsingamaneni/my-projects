@@ -1,0 +1,34 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+ simple:
+   format: '[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s'
+handlers:
+
+#  PM master HANDLERS
+
+ postPM_master:
+   class: logging.FileHandler
+   level: DEBUG
+   formatter: simple
+   filename:  logger_files/pm_master.log
+
+
+ PM_masterconsole:
+   class: logging.StreamHandler
+   level: DEBUG
+   formatter: simple
+
+
+loggers:
+
+ postPM_master:
+   level: DEBUG
+   handlers: [postPM_master]
+   propagate: True
+
+
+ PM_masterconsole:
+   level: DEBUG
+   handlers: [PM_masterconsole]
+   propagate: True

@@ -1,0 +1,34 @@
+version: 1
+disable_existing_loggers: False
+formatters:
+ simple:
+   format: '[%(asctime)s] {%(filename)s:%(lineno)d} %(levelname)s - %(message)s'
+handlers:
+
+#  Product HANDLERS
+
+ post_time_balancing:
+   class: logging.FileHandler
+   level: DEBUG
+   formatter: simple
+   filename:  logger_files/time_balancing.log
+
+
+ time_balancing_console:
+   class: logging.StreamHandler
+   level: DEBUG
+   formatter: simple
+
+
+loggers:
+
+ post_time_balancing:
+   level: DEBUG
+   handlers: [post_time_balancing]
+   propagate: True
+
+
+ time_balancing_console:
+   level: DEBUG
+   handlers: [time_balancing_console]
+   propagate: True

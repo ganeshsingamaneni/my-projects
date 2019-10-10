@@ -1,0 +1,14 @@
+[2019-09-11 14:41:19,827] {getbyidupdateglmaster.py:32} INFO - succesfully fetched the data of this GL_Master id
+[2019-09-11 18:11:39,385] {getbyidupdateglmaster.py:32} INFO - succesfully fetched the data of this GL_Master id
+[2019-09-11 18:42:05,422] {getpostglmaster.py:33} INFO - No data is available on GL_master
+[2019-09-11 18:42:29,237] {getpostglmaster.py:58} INFO -  GL_Master succesfully posted
+[2019-09-11 18:42:29,657] {getpostglmaster.py:30} INFO - succesfully fetched the  GL_Master data
+[2019-09-11 18:42:45,980] {getpostglmaster.py:58} INFO -  GL_Master succesfully posted
+[2019-09-11 18:42:46,498] {getpostglmaster.py:30} INFO - succesfully fetched the  GL_Master data
+[2019-09-11 18:43:02,568] {getpostglmaster.py:58} INFO -  GL_Master succesfully posted
+[2019-09-11 18:43:03,206] {getpostglmaster.py:30} INFO - succesfully fetched the  GL_Master data
+[2019-09-11 18:43:56,606] {getpostglmaster.py:30} INFO - succesfully fetched the  GL_Master data
+[2019-09-11 18:45:07,293] {getpostglmaster.py:30} INFO - succesfully fetched the  GL_Master data
+[2019-09-11 18:45:51,142] {getpostglmaster.py:30} INFO - succesfully fetched the  GL_Master data
+[2019-09-11 18:46:09,566] {getpostglmaster.py:30} INFO - succesfully fetched the  GL_Master data
+[2019-09-11 18:46:40,997] {getpostglmaster.py:30} INFO - succesfully fetched the  GL_Master data

@@ -1,0 +1,67 @@
+from config import db
+import datetime
+
+
+class Nsr_Data_Information(db.Model):
+    __tablename__ = "nsr_table_information"
+    id = db.Column(db.Integer, primary_key=True)
+    # master_product_id = db.Column(db.Integer,
+    #                              db.ForeignKey('input_master.id'),
+    #                              nullable=False)
+    segment_id = db.Column(db.String(11),nullable =False)  
+    paper_machine_id = db.Column(db.String(155),nullable =False)                          
+    # last_fy_nsr_value = db.Column(db.Integer,
+    #                              db.ForeignKey('financial_year_master.id'),
+    #                              nullable=False)
+    profit_center_id =  db.Column(db.String(11),nullable =False)                     
+    sales_category_id = db.Column(db.String(11),nullable =False)                           
+    product_id = db.Column(db.String(11),nullable =False)                                       
+    Qty_Apr = db.Column(db.String(155),nullable =True)    
+    Qty_May = db.Column(db.String(155),nullable =True)                         
+    Qty_Jun = db.Column(db.String(155),nullable =True)
+    Qty_Jul = db.Column(db.String(155),nullable =True)
+    Qty_Aug = db.Column(db.String(155),nullable =True)
+    Qty_Sep = db.Column(db.String(155),nullable =True)
+    Qty_Oct = db.Column(db.String(155),nullable =True)
+    Qty_Nov = db.Column(db.String(155),nullable =True)
+    Qty_Dec = db.Column(db.String(155),nullable =True)
+    Qty_Jan = db.Column(db.String(155),nullable =True)
+    Qty_Feb = db.Column(db.String(155),nullable =True)
+    Qty_Mar = db.Column(db.String(155),nullable =True)
+    Qty_Total = db.Column(db.String(155),nullable =True)
+    NSR_Apr = db.Column(db.String(155),nullable =True)
+    NSR_May = db.Column(db.String(155),nullable =True)
+    NSR_Jun = db.Column(db.String(155),nullable =True)
+    NSR_Jul = db.Column(db.String(155),nullable =True)
+    NSR_Aug = db.Column(db.String(155),nullable =True)
+    NSR_Sep = db.Column(db.String(155),nullable =True)
+    NSR_Oct = db.Column(db.String(155),nullable =True)
+    NSR_Nov = db.Column(db.String(155),nullable =True)
+    NSR_Dec = db.Column(db.String(155),nullable =True)
+    NSR_Jan = db.Column(db.String(155),nullable =True)
+    NSR_Feb = db.Column(db.String(155),nullable =True)
+    NSR_Mar = db.Column(db.String(155),nullable =True)
+    NSR_Total = db.Column(db.String(155),nullable =True)
+    NSR_Value_Apr = db.Column(db.String(155),nullable =True)
+    NSR_Value_May = db.Column(db.String(155),nullable =True)
+    NSR_Value_Jun = db.Column(db.String(155),nullable =True)
+    NSR_Value_Jul = db.Column(db.String(155),nullable =True)
+    NSR_Value_Aug = db.Column(db.String(155),nullable =True)
+    NSR_Value_Sep = db.Column(db.String(155),nullable =True)
+    NSR_Value_Oct = db.Column(db.String(155),nullable =True)
+    NSR_Value_Nov = db.Column(db.String(155),nullable =True)
+    NSR_Value_Dec = db.Column(db.String(155),nullable =True)
+    NSR_Value_Jan = db.Column(db.String(155),nullable =True)
+    NSR_Value_Feb = db.Column(db.String(155),nullable =True)
+    NSR_Value_Mar = db.Column(db.String(155),nullable =True)
+    NSR_Value_Total = db.Column(db.String(155),nullable =True)
+    grand_totals = db.Column(db.String(200),nullable =True)
+    planned_volume_for_last_fy = db.Column(db.String(200),nullable =True)
+    planned_nsr_for_last_fy = db.Column(db.String(200),nullable =True)
+    ytd_actual_volume_for_fy = db.Column(db.String(200),nullable =True)
+    ytd_actual_nsr_for_fy = db.Column(db.String(200),nullable =True)
+    status = db.Column(db.Boolean, default=True)
+    createdAt = db.Column(db.DateTime, default=datetime.datetime.utcnow())
+    updatedAt = db.Column(db.DateTime) 
+   
+ 
