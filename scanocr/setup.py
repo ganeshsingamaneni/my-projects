@@ -93,7 +93,7 @@ setup(
         "typing==3.6.6",
         "tzlocal==1.5.1",
         "urllib3==1.23",
-        "Werkzeug==0.14.1",
+        "Werkzeug==0.15.3",
         "xmltodict==0.11.0"
     ],
 )
