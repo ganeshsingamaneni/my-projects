@@ -74,7 +74,7 @@ setup(
         "opencv-python==3.4.4.19",
         "pandas==0.23.4",
         "passlib==1.7.1",
-        "Pillow==5.3.0",
+        "Pillow==6.2.0",
         "protobuf==3.6.1",
         "pyasn1==0.4.4",
         "pyasn1-modules==0.2.2",
